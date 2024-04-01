@@ -32,11 +32,11 @@ console.log('Views directory:', path.join(__dirname, 'resources/views'));
 
 route(app);
 
-// Error handling
+                    // Error handling
                     app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).send('Something went wrong!');
-});
+                        console.error(err.stack);
+                        res.status(500).send('Something went wrong!');
+                    });
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
